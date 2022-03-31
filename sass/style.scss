@@ -121,6 +121,7 @@ main {
 
     .block4-column1 {
         margin-top: 50px;
+        width: 100%;
     }
 
     .box1-depo {
@@ -348,10 +349,23 @@ main {
         width: 100%;
     }
 
+    .block4-subsection1 {
+        display: flex;
+        margin-top: 220px;
+    
+        div {
+            width: 100%;
+        }
+    }
+
     .block4-column2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        width: 100%;
+
+        
         
         span {
             display: none;
@@ -509,9 +523,6 @@ main {
     display: flex;
     margin-top: 220px;
 
-    div {
-        width: 50%;
-    }
 }
 
 .block4-column1 {
