@@ -25,6 +25,10 @@ header div {
   font-size: 14px;
 }
 
+.logo-sm {
+  display: none;
+}
+
 .nav {
   display: flex;
 }
@@ -99,43 +103,15 @@ main {
   width: 47%;
 }
 
-@media screen and (max-width: 1000px) {
-  .block1 {
-    margin-left: 10px;
-  }
-
-  .block1-subsection1 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-  }
-}
 .block1-subsection2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .block1-subsection2 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .block4-column1 {
-    margin-top: 50px;
-    width: 100%;
-  }
-
-  .box1-depo {
-    margin-top: 50px;
-  }
-}
 .box1 {
   font-size: 40px;
-  padding-right: 60px;
+  padding-right: 10px;
   margin-top: 175px;
   max-width: 600px;
   width: 100%;
@@ -322,6 +298,10 @@ main {
   max-width: 522px;
   margin-top: 200px;
   position: relative;
+}
+
+.box-video-sm {
+  display: none;
 }
 
 .video-desc {
@@ -886,6 +866,83 @@ footer a:hover {
   color: rgba(162, 255, 205, 0.35);
 }
 
+.btn-open::before {
+  content: "▷";
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.43);
+}
+
+.traders-description-sm {
+  display: none;
+}
+
+.btn-download::before {
+  content: "▷";
+  margin-right: 10px;
+  transform: rotate(90deg);
+  font-size: 20px;
+  color: rgba(30, 25, 42, 0.61);
+}
+
+.block2-btn-download {
+  width: 45%;
+}
+.block2-btn-download div {
+  display: flex;
+}
+
+.btn-green {
+  margin-right: 60px;
+}
+
+.btn-scroll-down {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video {
+  width: 100%;
+  max-width: 522px;
+  height: auto;
+}
+
+.block4-subsection1 {
+  display: flex;
+  margin-top: 220px;
+}
+
+.block4-column1 {
+  font-size: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.block4-column1 p {
+  margin-bottom: 40px;
+}
+
+.block4-column2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.block4-column2 h4 {
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+.block4-column2 span {
+  color: #a2ffcd;
+}
+
+.block4-subsection2 {
+  display: flex;
+  margin-top: 110px;
+}
+.block4-subsection2 div {
+  width: 50%;
+}
+
 @font-face {
   font-family: "Proxima Nova Light";
   src: url("../fonts/ProximaNova-Light.eot");
@@ -967,6 +1024,18 @@ footer a:hover {
     width: 100%;
   }
 
+  .box1-desc {
+    padding-top: 0px;
+  }
+
+  .traders-description {
+    display: none;
+  }
+
+  .box2-traders {
+    height: 640px;
+  }
+
   .block4-column2 {
     flex-direction: column;
     align-items: center;
@@ -1013,6 +1082,10 @@ footer a:hover {
     max-width: 200px;
   }
 
+  .box {
+    padding-right: 0px;
+  }
+
   .arrowed {
     display: none;
   }
@@ -1020,6 +1093,7 @@ footer a:hover {
   .block2-btn-download {
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
   }
 
   .flex-btn {
@@ -1028,9 +1102,12 @@ footer a:hover {
 
   .block-contact-subsection1 {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 10px;
+  }
+  .block-contact-subsection1 h3 {
+    font-size: 46px;
   }
 
   .contact-btn {
@@ -1063,6 +1140,11 @@ footer a:hover {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+  }
+
+  .block-payments-box2 {
+    display: none;
   }
 
   footer ul {
@@ -1071,6 +1153,15 @@ footer a:hover {
   footer li {
     width: 50%;
     gap: 10px;
+  }
+
+  .logo-sm {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .box-video {
+    display: none;
   }
 
   header {
@@ -1092,77 +1183,54 @@ footer a:hover {
   width: 100%;
 }
 
-.btn-open::before {
-  content: "▷";
-  margin-right: 10px;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.43);
-}
+@media screen and (max-width: 1000px) {
+  .block1 {
+    margin-left: 10px;
+  }
 
-.btn-download::before {
-  content: "▷";
-  margin-right: 10px;
-  transform: rotate(90deg);
-  font-size: 20px;
-  color: rgba(30, 25, 42, 0.61);
+  .block1-subsection1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
+@media screen and (max-width: 1000px) {
+  .block1-subsection2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.block2-btn-download {
-  width: 45%;
-}
-.block2-btn-download div {
-  display: flex;
-}
+  .block4-column1 {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0px 20px;
+  }
 
-.btn-green {
-  margin-right: 60px;
-}
+  .box1-depo {
+    margin-top: 50px;
+  }
 
-.btn-scroll-down {
-  display: flex;
-  justify-content: flex-end;
-}
+  .traders-description-sm {
+    display: block;
+    max-width: 380px;
+    margin: 0 auto;
+  }
 
-.video {
-  width: 100%;
-  max-width: 522px;
-  height: auto;
-}
+  .box-video-sm {
+    max-width: 522px;
+    margin-top: 200px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
 
-.block4-subsection1 {
-  display: flex;
-  margin-top: 220px;
-}
-
-.block4-column1 {
-  font-size: 40px;
-  max-width: 600px;
-  width: 100%;
-  text-transform: uppercase;
-}
-.block4-column1 p {
-  margin-bottom: 40px;
-}
-
-.block4-column2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 60px;
-}
-.block4-column2 h4 {
-  margin-top: 12px;
-  margin-bottom: 25px;
-}
-.block4-column2 span {
-  color: #a2ffcd;
-}
-
-.block4-subsection2 {
-  display: flex;
-  margin-top: 110px;
-}
-.block4-subsection2 div {
-  width: 50%;
+  .box-video-sm img {
+    max-width: 522px;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

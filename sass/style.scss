@@ -24,6 +24,10 @@ header div {
     font-size: 14px;
 }
 
+.logo-sm {
+    display: none;
+}
+
 .nav {
     display: flex;
 }
@@ -98,45 +102,15 @@ main {
     width: 47%;
 }
 
-@media screen and (max-width: 1000px) {
-    .block1 {
-        margin-left: 10px;
-    }
-
-    .block1-subsection1 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: 30px;
-    }
-}
-
 .block1-subsection2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-    .block1-subsection2 {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .block4-column1 {
-        margin-top: 50px;
-        width: 100%;
-    }
-
-    .box1-depo {
-        margin-top: 50px;
-    }
-}
-
 .box1 {
     font-size: 40px;
-    padding-right: 60px;
+    padding-right: 10px;
     margin-top: 175px;
     max-width: 600px;
     width: 100%;
@@ -333,6 +307,10 @@ main {
     position: relative;
 }
 
+.box-video-sm {
+    display: none;
+}
+
 .video-desc {
     display: flex;
     justify-content: flex-start;
@@ -410,8 +388,6 @@ main {
     gap: 45px;
     margin-top: 100px;
 }
-
-
 
 .block4-txt-step {
     color: #f0e9ff;
@@ -916,6 +892,87 @@ footer {
     content: "▷";
     color: rgba(162, 255, 205, 0.35);
 }
+.btn-open::before {
+    content: "\25B7";
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.43);
+}
+
+.traders-description-sm {
+    display: none;
+}
+
+.btn-download::before {
+    content: "\25B7";
+    margin-right: 10px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    color: rgba(30, 25, 42, 0.61);
+}
+
+.block2-btn-download {
+    width: 45%;
+
+    div {
+        display: flex;
+    }
+}
+
+.btn-green {
+    margin-right: 60px;
+}
+
+.btn-scroll-down {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.video {
+    width: 100%;
+    max-width: 522px;
+    height: auto;
+}
+
+.block4-subsection1 {
+    display: flex;
+    margin-top: 220px;
+}
+
+.block4-column1 {
+    font-size: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-transform: uppercase;
+
+    p {
+        margin-bottom: 40px;
+    }
+}
+
+.block4-column2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    h4 {
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+
+    span {
+        color: #a2ffcd;
+    }
+}
+
+.block4-subsection2 {
+    display: flex;
+    margin-top: 110px;
+
+    div {
+        width: 50%;
+    }
+}
 
 @font-face {
     font-family: "Proxima Nova Light";
@@ -1003,6 +1060,18 @@ footer {
         }
     }
 
+    .box1-desc {
+        padding-top: 0px;
+    }
+
+    .traders-description {
+        display: none;
+    }
+
+    .box2-traders {
+        height: 640px;
+    }
+
     .block4-column2 {
         flex-direction: column;
         align-items: center;
@@ -1054,6 +1123,10 @@ footer {
         }
     }
 
+    .box {
+        padding-right: 0px;
+    }
+
     .arrowed {
         display: none;
     }
@@ -1061,6 +1134,7 @@ footer {
     .block2-btn-download {
         justify-content: flex-start;
         align-items: flex-start;
+        width: 100%;
     }
 
     .flex-btn {
@@ -1069,15 +1143,18 @@ footer {
 
     .block-contact-subsection1 {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         padding: 10px;
+
+        h3 {
+            font-size: 46px;
+        }
     }
-    
+
     .contact-btn {
         justify-content: flex-center;
         width: 100%;
-
     }
 
     .arrowed {
@@ -1105,10 +1182,14 @@ footer {
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
+        gap: 20px;
+    }
+
+    .block-payments-box2 {
+        display: none;
     }
 
     footer {
-        
         ul {
             flex-wrap: wrap;
         }
@@ -1119,7 +1200,14 @@ footer {
         }
     }
 
-    
+    .logo-sm {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .box-video {
+        display: none;
+    }
 
     header {
         display: none;
@@ -1143,80 +1231,53 @@ footer {
     }
 }
 
-.btn-open::before {
-    content: "\25B7";
-    margin-right: 10px;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.43);
-}
+@media screen and (max-width: 1000px) {
+    .block1 {
+        margin-left: 10px;
+    }
 
-.btn-download::before {
-    content: "\25B7";
-    margin-right: 10px;
-    transform: rotate(90deg);
-    font-size: 20px;
-    color: rgba(30, 25, 42, 0.61);
-}
-
-.block2-btn-download {
-    width: 45%;
-
-    div {
-        display: flex;
+    .block1-subsection1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+        margin-bottom: 30px;
     }
 }
 
-.btn-green {
-    margin-right: 60px;
-}
-
-.btn-scroll-down {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.video {
-    width: 100%;
-    max-width: 522px;
-    height: auto;
-}
-
-.block4-subsection1 {
-    display: flex;
-    margin-top: 220px;
-}
-
-.block4-column1 {
-    font-size: 40px;
-    max-width: 600px;
-    width: 100%;
-    text-transform: uppercase;
-
-    p {
-        margin-bottom: 40px;
-    }
-}
-
-.block4-column2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-
-    h4 {
-        margin-top: 12px;
-        margin-bottom: 25px;
+@media screen and (max-width: 1000px) {
+    .block1-subsection2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    span {
-        color: #a2ffcd;
+    .block4-column1 {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0px 20px;
     }
-}
 
-.block4-subsection2 {
-    display: flex;
-    margin-top: 110px;
+    .box1-depo {
+        margin-top: 50px;
+    }
 
-    div {
-        width: 50%;
+    .traders-description-sm {
+        display: block;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .box-video-sm {
+        max-width: 522px;
+        margin-top: 200px;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .box-video-sm img {
+        max-width: 522px;
+        width: 100%;
     }
 }
