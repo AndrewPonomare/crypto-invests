@@ -191,6 +191,116 @@ main {
   background-position: top center;
 }
 
+.user-box {
+  display: flex;
+  align-items: center;
+  padding-top: 203px;
+  padding-left: 40px;
+}
+.user-box img {
+  margin-right: 20px;
+}
+
+.usd-income {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #e1d3ff;
+  text-shadow: 2px 2px 10px rgba(44, 44, 44, 0.25);
+}
+
+.txt-12 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+  color: #574879;
+}
+
+.traders-description {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.traders-description p {
+  max-width: 384px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f0e9ff;
+}
+
+.user-box1 {
+  padding: 10px;
+  margin-left: 40px;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-box1:last-child {
+  margin-top: 102px;
+}
+
+.user-box2 {
+  position: absolute;
+  width: 370px;
+  left: -10px;
+  background: #1b1624;
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.users {
+  max-width: 290px;
+  margin-top: 75px;
+  position: relative;
+}
+
+.user-photo {
+  display: flex;
+  align-items: center;
+}
+.user-photo img {
+  margin-right: 15px;
+}
+
+.user-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.coin-desc {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+  margin-left: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a2ffcd;
+}
+.coin-desc p::before {
+  content: "▽";
+  margin-right: 10px;
+}
+.coin-desc img {
+  margin-right: 7px;
+}
+
 .btn-scroll-down {
   display: flex;
   justify-content: end;
