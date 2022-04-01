@@ -249,6 +249,15 @@ main {
     
 }
 
+.user-group {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 20px;
+    }
+}
+
 .users {
     max-width: 290px;
     margin-top: 75px;
