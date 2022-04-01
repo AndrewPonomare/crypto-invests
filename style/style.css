@@ -304,6 +304,10 @@ main {
   display: none;
 }
 
+.box-step-sm {
+  display: none;
+}
+
 .video-desc {
   display: flex;
   justify-content: flex-start;
@@ -1309,6 +1313,10 @@ footer a:hover {
   .block2 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .user-box2 {
+    display: none;
   }
 }
 
