@@ -165,24 +165,6 @@ main {
     max-width: 135px;
 }
 
-@font-face {
-    font-family: "Proxima Nova Light";
-    src: url("../fonts/ProximaNova-Light.eot");
-    src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Proxima Nova Thin";
-    src: url("../fonts/ProximaNovaT-Thin.eot");
-    src: url("../fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 .box2 {
     margin-top: 100px;
     width: 100%;
@@ -211,7 +193,7 @@ main {
 
 .usd-income {
     font-style: normal;
-    font-weight: 600;
+    font-weight: Semi Bold;
     font-size: 26px;
     line-height: 31px;
     color: #e1d3ff;
@@ -423,6 +405,11 @@ main {
 
         p {
             max-width: 200px;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -1179,4 +1166,22 @@ footer {
 .usd-green::before {
     content: "▷";
     color: rgba(162, 255, 205, 0.35);
+}
+
+@font-face {
+    font-family: "Proxima Nova Light";
+    src: url("../fonts/ProximaNova-Light.eot");
+    src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova Thin";
+    src: url("../fonts/ProximaNovaT-Thin.eot");
+    src: url("../fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
