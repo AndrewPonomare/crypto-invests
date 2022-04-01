@@ -401,6 +401,10 @@ main {
     padding-bottom: 15px;
 }
 
+.block4-txt-income-sm {
+    display: none;
+}
+
 .txt-bold {
     font-weight: bold;
 }
@@ -1032,14 +1036,27 @@ footer {
     .block4-subsection2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+
+        div {
+            width: 100%;
+        }
     }
+
+    .block4-txt-income-sm {
+        display: block;
+        font-size: 60px;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .block4-txt-income {
+        display: none;
+    }
+
     .block4-subsection3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: none;
     }
     .block4-subsection4 {
         display: flex;
@@ -1052,10 +1069,16 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 0px;
+        width: 100%;
+
+        div {
+            max-width: 400px;
+        }
     }
 
     .block4-subsection-item2 {
-        max-width: 230px;
+        max-width: 400px;
         width: 100%;
     }
 
@@ -1083,8 +1106,7 @@ footer {
     .block4-column2 {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
         width: 100%;
 
         span {
@@ -1122,6 +1144,10 @@ footer {
             height: auto;
             overflow: auto;
         }
+    }
+
+    .ds-none {
+        display: none;
     }
 
     .btn-download {
@@ -1287,5 +1313,50 @@ footer {
     .box-video-sm img {
         max-width: 522px;
         width: 100%;
+    }
+
+    .box-step-sm {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 25px 0px;
+
+        p {
+            margin-left: 50px;
+            color: #f0e9ff;
+            font-size: 30px;
+            text-transform: uppercase;
+            opacity: 10%;
+        }
+    
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            font-size: 30px;
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            position: relative;
+        }
+        div::before {
+            position: absolute;
+            content: "\25B7";
+            left: -7px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #a2ffcd;
+        }
+    }
+
+    .block4-subsection5-plan {
+        width: 100%;
+        text-align: center;
+    }
+
+    .block4-txt-step {
+        display: none;
     }
 }
