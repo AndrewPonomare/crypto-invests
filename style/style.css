@@ -1305,6 +1305,11 @@ footer a:hover {
   .block4-txt-step {
     display: none;
   }
+
+  .block2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
