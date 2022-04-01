@@ -977,6 +977,14 @@ footer a:hover {
     object-fit: cover;
   }
 
+  .block2-num {
+    text-align: center;
+  }
+
+  .user-group {
+    flex-direction: column;
+  }
+
   .block4-subsection1 {
     display: flex;
     flex-direction: column;
