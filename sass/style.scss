@@ -8,8 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -19,7 +17,6 @@ header {
     width: 100%;
     margin: 0 auto;
 }
-
 
 header div {
     display: flex;
@@ -141,6 +138,10 @@ main {
     color: #ffffff;
 }
 
+.btn-purple:active {
+    background-color: #642ce0;
+}
+
 .triangle::before {
     content: "▷";
     margin-right: 10px;
@@ -152,6 +153,14 @@ main {
     color: #1e192a;
     width: 100%;
     max-width: 135px;
+}
+
+.btn-result:active {
+    color: rgba(123, 78, 224, 0.77);
+}
+
+.btn-green:active {
+    background: rgba(110, 238, 169, 1);
 }
 
 .box2 {
@@ -1056,7 +1065,7 @@ footer {
         text-align: center;
         margin-top: 50px;
     }
-    
+
     .block4-txt-income {
         display: none;
     }
@@ -1085,6 +1094,10 @@ footer {
 
     .block4-subsection-item2 {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 400px;
     }
 
     .block4-subsection1 {
@@ -1212,7 +1225,7 @@ footer {
     }
 
     .contact-info {
-        margin: 90px 10px 90px 10px;
+        margin: 90px 10px 90px 0px;
         max-width: 380px;
     }
 
@@ -1331,7 +1344,7 @@ footer {
             text-transform: uppercase;
             opacity: 10%;
         }
-    
+
         div {
             display: flex;
             align-items: center;
@@ -1366,7 +1379,7 @@ footer {
         padding-left: 20px;
         padding-right: 10px;
     }
-    
+
     .mail {
         font-size: 20px;
     }
@@ -1389,13 +1402,22 @@ footer {
         }
     }
 
+    .video-desc {
+        top: 70px;
+        left: -230px;
+
+        hr {
+            width: 70px;
+            margin: 0px 10px;
+        }
+    }
 }
 
-body, html {
+body,
+html {
     overflow-x: hidden;
-  }
+}
 
-  section {
-      padding: 0px 20px;
-  }
-
+section {
+    padding: 0px 20px;
+}
