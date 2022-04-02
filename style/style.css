@@ -994,7 +994,7 @@ footer a:hover {
 
   .block4-subsection1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
@@ -1048,7 +1048,7 @@ footer a:hover {
 
   .block4-subsection1 {
     display: flex;
-    margin-top: 220px;
+    margin-top: 40px;
   }
   .block4-subsection1 div {
     width: 100%;
@@ -1306,7 +1306,7 @@ footer a:hover {
   }
 
   .block2 {
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
   }
 
@@ -1316,6 +1316,19 @@ footer a:hover {
 
   .user-box2 {
     display: none;
+  }
+
+  .box2-traders {
+    display: none;
+  }
+
+  .traders-description-sm {
+    background-image: url(../images/illustration.png);
+    background-size: cover;
+  }
+  .traders-description-sm p {
+    padding-top: 310px;
+    margin-bottom: 60px;
   }
 }
 body, html {
