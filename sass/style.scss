@@ -1212,9 +1212,8 @@ footer {
     }
 
     .contact-info {
-        margin-bottom: 80px;
-        margin-top: 90px;
-        padding: 0px 10px;
+        margin: 90px 10px 90px 10px;
+        max-width: 380px;
     }
 
     .contact-adress {
@@ -1366,6 +1365,10 @@ footer {
     .block2 {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    
+    .mail {
+        font-size: 20px;
     }
 
     .user-box2 {
