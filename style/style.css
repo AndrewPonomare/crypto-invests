@@ -6,7 +6,7 @@ body {
   width: 100%;
   font-family: "Proxima Nova Thin";
   color: #f0e9ff;
-  padding: 0px 10px;
+  overflow-x: hidden;
 }
 
 header {
@@ -1318,6 +1318,9 @@ footer a:hover {
   .user-box2 {
     display: none;
   }
+}
+body, html {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

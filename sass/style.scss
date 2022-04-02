@@ -5,8 +5,10 @@ body {
     width: 100%;
     font-family: "Proxima Nova Thin";
     color: #f0e9ff;
-    padding: 0px 10px;
+    overflow-x: hidden;
 }
+
+
 
 header {
     display: flex;
@@ -17,6 +19,7 @@ header {
     width: 100%;
     margin: 0 auto;
 }
+
 
 header div {
     display: flex;
@@ -1374,3 +1377,7 @@ footer {
     }
 
 }
+
+body, html {
+    overflow-x: hidden;
+  }
