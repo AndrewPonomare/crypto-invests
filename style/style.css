@@ -147,6 +147,10 @@ main {
   color: rgba(255, 255, 255, 0.43);
 }
 
+.triangle-green {
+  font-weight: bold;
+}
+
 .btn-green {
   background-color: #a2ffcd;
   color: #1e192a;
@@ -209,7 +213,8 @@ main {
   display: flex;
   justify-content: center;
 }
-.traders-description p {
+
+.traders-description-txt {
   max-width: 384px;
   font-style: normal;
   font-weight: 300;
@@ -352,6 +357,7 @@ main {
   font-size: 14px;
   max-width: 432px;
   width: 100%;
+  line-height: 24px;
   padding-top: 60px;
 }
 
@@ -981,6 +987,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 0px;
   }
 
   .block2-download {
@@ -998,6 +1005,14 @@ footer a:hover {
 
   .block2-num {
     text-align: center;
+  }
+
+  .block2-num-bg-sm {
+    background-image: url(../images/bg-num-sm.png);
+    max-width: 514px;
+    height: 300px;
+    background-size: cover;
+    margin: 0 auto;
   }
 
   .user-group {
@@ -1175,8 +1190,11 @@ footer a:hover {
 
   .block-contact-adress {
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+  }
+  .block-contact-adress ul {
+    padding: 0px;
   }
 
   .contact-info {
@@ -1234,7 +1252,8 @@ footer a:hover {
 
 @media screen and (max-width: 1000px) {
   .block1 {
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .block1-subsection1 {
@@ -1256,6 +1275,10 @@ footer a:hover {
     width: 100%;
   }
 
+  .block4 {
+    padding: 0px 10px;
+  }
+
   .box1-depo {
     margin-top: 50px;
   }
@@ -1263,6 +1286,14 @@ footer a:hover {
   .traders-description-sm {
     display: block;
     margin: 0 auto;
+  }
+
+  .traders-description-sm-txt {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 70px;
   }
 
   .box-video-sm {
@@ -1306,10 +1337,12 @@ footer a:hover {
   .box-step-sm div::before {
     position: absolute;
     content: "▷";
-    left: -7px;
+    left: 29px;
     font-size: 25px;
     font-weight: bold;
+    top: -15px;
     color: #a2ffcd;
+    transform: rotate(90deg);
   }
 
   .block4-subsection5-plan {
@@ -1322,8 +1355,9 @@ footer a:hover {
   }
 
   .block2 {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 10px;
+    background: none;
   }
 
   .mail {
@@ -1362,7 +1396,7 @@ html {
 }
 
 section {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
