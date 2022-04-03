@@ -98,6 +98,32 @@ button {
   padding: 2px;
 }
 
+.dropdown-language {
+  position: relative;
+}
+
+.dropdown-language-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-language:hover .dropdown-language-content {
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+  left: 7px;
+}
+.dropdown-language:hover .dropdown-language-content .language::after {
+  border: none;
+}
+.dropdown-language:hover .dropdown-language-content a {
+  padding: 10px;
+  text-decoration: none;
+}
+.dropdown-language:hover .dropdown-language-content a:hover {
+  color: #f0e9ff;
+}
+
 p {
   margin: 0px;
 }
@@ -1460,19 +1486,36 @@ footer a:hover {
     border-top: 2px solid #aa9bd0;
     border-bottom: 2px solid #aa9bd0;
   }
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #f0e9ff;
+    opacity: 0.4;
+  }
+  .dropdown-menu a:hover {
+    opacity: 1;
+  }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    left: -100px;
+    left: -200px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
   }
 
   .dropdown-menu:hover .dropdown-content {
     display: block;
+  }
+  .dropdown-menu:hover .dropdown-content ul {
+    list-style: none;
+  }
+  .dropdown-menu:hover .dropdown-content ul li {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .dropdown-menu:hover .dropdown-content main {
+    display: none;
   }
 
   .btn-nav {
@@ -1501,8 +1544,8 @@ footer a:hover {
   .dropdown-language:hover .dropdown-language-content {
     display: flex;
     flex-direction: column;
-    top: 30px;
-    left: 90px;
+    top: 45px;
+    left: 107px;
   }
   .dropdown-language:hover .dropdown-language-content .language::after {
     border: none;
@@ -1515,29 +1558,6 @@ footer a:hover {
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
 }
-.dropdown-language {
-  position: relative;
-}
-
-.dropdown-language-content {
-  display: none;
-  position: absolute;
-}
-
-.dropdown-language:hover .dropdown-language-content {
-  display: flex;
-  flex-direction: column;
-  top: 30px;
-  left: 7px;
-}
-.dropdown-language:hover .dropdown-language-content .language::after {
-  border: none;
-}
-.dropdown-language:hover .dropdown-language-content a {
-  padding: 10px;
-  text-decoration: none;
-}
-
 body,
 html {
   overflow-x: hidden;
@@ -1545,6 +1565,12 @@ html {
 
 section {
   padding: 0px 10px;
+}
+
+#contact {
+  margin-top: 500px;
+  display: none;
+  padding-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
