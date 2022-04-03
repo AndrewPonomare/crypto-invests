@@ -46,19 +46,14 @@ header div {
 }
 
 button {
-  color: #f0e9ff;
-  background: none;
-  outline: none;
-  border-radius: 31px;
-  cursor: pointer;
-  color: #aa9bd0;
-  padding: 15px 27px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   white-space: nowrap;
   max-height: 45px;
   height: 100%;
   display: flex;
   align-items: center;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .flex-btn {
@@ -75,6 +70,32 @@ button {
 .btn-group {
   display: flex;
   gap: 25px;
+}
+
+.btn-language {
+  position: relative;
+  border: none;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.dropdown {
+  display: none;
+}
+
+.language::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 3px;
+  border: 1px solid white;
+  border-width: 1px 1px 0 0;
+  transform: rotate(135deg);
+  margin-left: 10px;
+  padding: 2px;
 }
 
 p {
@@ -135,10 +156,23 @@ main {
 .btn-purple {
   background-color: #7b4ee0;
   color: #ffffff;
+  color: #f0e9ff;
+  border-radius: 31px;
+  color: #aa9bd0;
+  padding: 15px 27px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .btn-purple:active {
   background-color: #642ce0;
+}
+
+.enter-btn {
+  color: #f0e9ff;
+  border-radius: 31px;
+  color: #aa9bd0;
+  padding: 15px 27px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .triangle::before {
@@ -156,6 +190,14 @@ main {
   color: #1e192a;
   width: 100%;
   max-width: 135px;
+}
+
+.btn-result {
+  color: #f0e9ff;
+  border-radius: 31px;
+  color: #aa9bd0;
+  padding: 15px 27px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .btn-result:active {
@@ -305,6 +347,13 @@ main {
   justify-content: end;
   margin-top: 80px;
   margin-bottom: 40px;
+}
+.btn-scroll-down button {
+  color: #f0e9ff;
+  border-radius: 31px;
+  color: #aa9bd0;
+  padding: 15px 27px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .btn-scroll-down button {
@@ -1230,10 +1279,6 @@ footer a:hover {
   .box-video {
     display: none;
   }
-
-  header {
-    display: none;
-  }
 }
 .block2-download {
   margin-top: 120px;
@@ -1337,7 +1382,7 @@ footer a:hover {
   .box-step-sm div::before {
     position: absolute;
     content: "▷";
-    left: 29px;
+    left: 28px;
     font-size: 25px;
     font-weight: bold;
     top: -15px;
@@ -1388,6 +1433,39 @@ footer a:hover {
   .video-desc hr {
     width: 70px;
     margin: 0px 10px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-sizing: border-box;
+    border-radius: 31px;
+    padding: 20px 17px;
+    margin-right: 10px;
+  }
+  .dropdown button {
+    background: none;
+    border: none;
+    width: 15px;
+    height: 5px;
+    border-top: 2px solid #aa9bd0;
+    border-bottom: 2px solid #aa9bd0;
+  }
+
+  .btn-nav {
+    flex-direction: row-reverse;
+  }
+
+  header {
+    flex-direction: row-reverse;
+  }
+
+  .btn-nav {
+    margin-left: 10px;
   }
 }
 body,
